@@ -11,7 +11,7 @@ M=0
 D;JGE
 @R5
 M=1
-(SKIP_R0_NEG).   // Label SKIP_R0_NEG
+(SKIP_R0_NEG)   // Label SKIP_R0_NEG
 @R0
 D=M
 @ABS_R0
