@@ -1,17 +1,17 @@
-@R1
-D=M
-@DIVIDE_BY_ZERO
-D;JEQ
+@R1              // Load the address of R1 into the A register
+D=M              // D = M[R1], i.e., the value stored at R1
+@DIVIDE_BY_ZERO  // Define label DIVIDE_BY_ZERO for division by zero handling
+D;JEQ            // Jump to DIVIDE_BY_ZERO if D == 0 (i.e., division by zero)
 
 @R0
 D=M
 @R5
 M=0
-@SKIP_R0_NEG
+@SKIP_R0_NEG     // Define label SKIP_R0_NEG for negative R0 handling
 D;JGE
 @R5
 M=1
-(SKIP_R0_NEG)
+(SKIP_R0_NEG).   // Label SKIP_R0_NEG
 @R0
 D=M
 @ABS_R0
