@@ -135,8 +135,6 @@ M=1
 @END
 0;JMP
 
-Q4:
-
 // SumArrayEntries.asm
 // Computes the sum of all entries in an array
 // R0: memory address of first array element
